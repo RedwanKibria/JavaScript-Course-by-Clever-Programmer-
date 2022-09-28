@@ -6,7 +6,15 @@
 // Write a function that takes in an array of numbers and returns the largest number
 
 function findMax (array) {
-  
+  let max = 0
+  for(i=0; i < array.length; i++) {
+    if(array[i] > max){
+      max = array[i]
+    }
+  }
+  return max
 }
+
+console.log(findMax([10, 15, 14, 35, 22]))
 
 //Topics: loops, arrays, conditions,
