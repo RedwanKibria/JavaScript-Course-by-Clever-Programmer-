@@ -10,7 +10,18 @@
 
 function isPalindrome (string) {
   // Should return true IF it's a palindrome
+  let reversed = ""
+
+  for (let i = string.length-1; i >= 0; i--) {
+    reversed += string[i]
+  }
+  if (reversed == string) {
+    return true
+  } else{
+    return false
+  }
 }
 
+console.log(isPalindrome("radar"))
 
 //Topics: Strings, loops
